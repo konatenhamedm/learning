@@ -1,0 +1,112 @@
+[
+	{
+		"libelle": "CONFIGURATION",
+		"id": 1,
+        "menu_directe":
+        [
+           {
+            "id": 1,
+            "libelle":"Ville",
+            "code":"/admin/ville"
+           },
+           {
+            "id": 2,
+            "libelle":"Civilite",
+            "code":"/admin/civilite"
+           }
+        ],
+        "sous_menu":
+        [
+            {
+             "libelle":"Sous configuration 1",
+             "menus":
+             [
+                {
+                    "id": 1,
+                    "libelle":"ville sous 1",
+                     "code":"/admin/ville"
+                   },
+                   {
+                    "id": 2,
+                    "libelle":"civilite sous 1",
+                     "code":"/admin/civilite"
+                   }
+             ]
+            },
+            {
+            "libelle":"Sous configuration 2",
+             "menus":
+             [
+                {
+                    "id": 1,
+                    "libelle":"Appartements",
+                     "code":"/admin/appartement"
+                   },
+                   {
+                    "id": 2,
+                    "libelle":"Articles",
+                     "code":"/admin/about"
+                   }
+             ]
+            }
+          
+        ]
+
+		
+	},
+    {
+		"libelle": "CONFIGURATION 2",
+		"id": 2,
+        "menu_directe":
+        [
+            {
+                "id": 1,
+                "libelle":"Ville",
+                "code":"/admin/ville"
+               },
+               {
+                "id": 2,
+                "libelle":"Civilite",
+                "code":"/admin/civilite"
+               }
+        ],
+        "sous_menu":
+        [
+            {
+             "libelle":"Sous configuration 1",
+             "menus":
+             [
+                {
+                    "id": 1,
+                    "libelle":"ville sous 1",
+                     "code":"/admin/ville"
+                   },
+                   {
+                    "id": 2,
+                    "libelle":"civilite sous 1",
+                     "code":"/admin/civilite"
+                   }
+             ]
+            },
+            {
+            "libelle":"Sous configuration 2",
+             "menus":
+             [
+                {
+                    "id": 1,
+                    "libelle":"Appartements",
+                     "code":"/admin/appartement"
+                   },
+                   {
+                    "id": 2,
+                    "libelle":"Articles",
+                     "code":"/admin/about"
+                   }
+             ]
+            }
+          
+        ]
+
+		
+	}
+]

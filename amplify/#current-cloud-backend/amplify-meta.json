@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-backofficefreewan-dev-76a83-authRole",
+      "UnauthRoleArn": "arn:aws:iam::940482407057:role/amplify-backofficefreewan-dev-76a83-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::940482407057:role/amplify-backofficefreewan-dev-76a83-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-backofficefreewan-dev-76a83-deployment",
+      "UnauthRoleName": "amplify-backofficefreewan-dev-76a83-unauthRole",
+      "StackName": "amplify-backofficefreewan-dev-76a83",
+      "StackId": "arn:aws:cloudformation:eu-north-1:940482407057:stack/amplify-backofficefreewan-dev-76a83/7c4a4950-7b2e-11ef-8fd5-0e7f136e88eb",
+      "AmplifyAppId": "dm2gjnvf7covo"
+    }
+  },
+  "auth": {
+    "backofficefreewana88d0051": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-backofficefreewan-dev-76a83-deployment/amplify-cfn-templates/auth/backofficefreewana88d0051-cloudformation-template.json",
+        "logicalId": "authbackofficefreewana88d0051"
+      },
+      "lastPushTimeStamp": "2024-09-25T11:18:57.376Z",
+      "output": {
+        "UserPoolId": "eu-north-1_h11kgus4e",
+        "AppClientIDWeb": "7q5socs2i2roknat9muogoes5v",
+        "AppClientID": "5130lsdfksoumoq1vaidu8gr8r",
+        "IdentityPoolId": "eu-north-1:feca6035-9790-450c-8719-e4b15af8e972",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-north-1:940482407057:userpool/eu-north-1_h11kgus4e",
+        "IdentityPoolName": "backofficefreewana88d0051_identitypool_a88d0051__dev",
+        "UserPoolName": "backofficefreewana88d0051_userpool_a88d0051"
+      },
+      "lastPushDirHash": "DRU1HxvXVwEgPJMmQ98UZXcoRrk="
+    }
+  }
+}

@@ -29,8 +29,6 @@
 
 <MetaTag {path} {description} {title} {subtitle} />
 
-
-
 <svelte:head>
 	<title>Login</title>
 	<meta name="description" content="lebedoo login" />

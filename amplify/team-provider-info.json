@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-backofficefreewan-dev-76a83-authRole",
+      "UnauthRoleArn": "arn:aws:iam::940482407057:role/amplify-backofficefreewan-dev-76a83-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::940482407057:role/amplify-backofficefreewan-dev-76a83-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-backofficefreewan-dev-76a83-deployment",
+      "UnauthRoleName": "amplify-backofficefreewan-dev-76a83-unauthRole",
+      "StackName": "amplify-backofficefreewan-dev-76a83",
+      "StackId": "arn:aws:cloudformation:eu-north-1:940482407057:stack/amplify-backofficefreewan-dev-76a83/7c4a4950-7b2e-11ef-8fd5-0e7f136e88eb",
+      "AmplifyAppId": "dm2gjnvf7covo"
+    },
+    "categories": {
+      "auth": {
+        "backofficefreewana88d0051": {}
+      }
+    }
+  }
+}

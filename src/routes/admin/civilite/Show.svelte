@@ -1,4 +1,5 @@
 <script lang="ts">
+    import InputSimple from '$components/inputs/InputSimple.svelte';
 	import { Button, Input, Label, Modal, Textarea } from 'flowbite-svelte';
 	export let open: boolean = false; // modal control
 
@@ -27,20 +28,8 @@
 	<div class="space-y-6 p-0">
 		<form action="#" use:init>
 			<div class="grid grid-cols-6 gap-6">
-				<Label class="col-span-6 space-y-2 sm:col-span-3">
-					<span>First Name</span>
-					<Input name="code" bind:value={code} class="border outline-none" placeholder="Entrez le code" required />
-				</Label>
-                <Label class="col-span-6 space-y-2 sm:col-span-3">
-					<span>Email</span>
-					<Input
-						name="libelle" bind:value={libelle}
-						type="text"
-						class="border outline-none"
-						placeholder=">Entrez le libelle"
-					/>
-				</Label>
-				
+				<InputSimple fieldName="code" label='Code' field={code} placeholder="entrez le code"/>
+                <InputSimple fieldName="libelle" label='Libelle' field={libelle} placeholder="entrez le libelle"/>
 			</div>
 		</form>
 	</div>

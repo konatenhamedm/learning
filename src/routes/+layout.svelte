@@ -8,10 +8,11 @@
     import { getAuthCookie } from '$lib/auth';
 
 	import {Amplify} from 'aws-amplify';
+	//import {signIn} from 'aws-amplify/auth';
 	import awsmobile from "../lib/aws-exports"
     import { onMount } from 'svelte';
 
-	Amplify.configure(awsmobile);
+	//Amplify.configure(awsmobile);
 	//let user: User =  getAuthCookie();
 
 

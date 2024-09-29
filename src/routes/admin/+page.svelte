@@ -5,8 +5,36 @@
 	import { getAuthCookie } from '$lib/auth'
     import type { User } from '../../types';
     import MetaTag from '../utils/MetaTag.svelte';
+    import InputSelect from '$components/inputs/InputSelect.svelte';
+    import InputDate from '$components/inputs/InputDate.svelte';
+    
+  import { Datepicker } from 'flowbite-svelte';
+    /* import { label } from 'aws-amplify'; */
 
    export let user: User;
+
+   let data = [
+    {
+        id:1,
+        libelle:'CI',
+       
+    },
+    {
+        id:2,
+        libelle:'Benin',
+       
+    },
+    {
+        id:3,
+        libelle:'Inde',
+       
+    },
+    {
+        id:4,
+        libelle:'Chine',
+       
+    }
+   ]
 
 
     //console.log(user);
@@ -77,6 +105,10 @@ let imageUrl = "https://w3crm.dexignzone.com/xhtml/page-error-404.html";
               <!-- Autres options -->
             </select>
           </div>
+
+          <InputSelect selectedId = {2} label="Selectionner un pays" datas={data} id='pays'/>
+          <InputDate/>
+          <Datepicker datepickerFormat="dd/mm/yyyy" />
     
 {#if user}
 <p>Bienvenue, {user.id} !</p>

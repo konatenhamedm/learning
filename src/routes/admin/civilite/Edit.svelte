@@ -1,5 +1,6 @@
 <script lang="ts">
     import Spinner from '$components/_skeletons/Spinner.svelte';
+    import InputSimple from '$components/inputs/inputSimple.svelte';
     import { BASE_URL_LOCAL } from '$lib/api';
     import { Button, Input, Label, Modal, Textarea } from 'flowbite-svelte';
     export let open: boolean = false; // modal control
@@ -63,14 +64,16 @@
     <div class="space-y-6 p-0">
         <form action="#" use:init>
             <div class="grid grid-cols-6 gap-6">
-                <Label class="col-span-6 space-y-2 sm:col-span-3">
+                <InputSimple fieldName="code" label='Code' field={code} placeholder="entrez le code"/>
+                <InputSimple fieldName="libelle" label='Libelle' field={libelle} placeholder="entrez le libelle"/>
+                <!-- <Label class="col-span-6 space-y-2 sm:col-span-3">
                     <span>Code</span>
                     <Input name="code" bind:value={code} class="border outline-none" placeholder="e.g. 1" required />
-                </Label>
-                <Label class="col-span-6 space-y-2 sm:col-span-3">
+                </Label> -->
+                <!-- <Label class="col-span-6 space-y-2 sm:col-span-3">
                     <span>Libelle</span>
                     <Input name="libelle" bind:value={libelle} class="border outline-none" placeholder="e.g. B6" required />
-                </Label>
+                </Label> -->
                
                 
             </div>
